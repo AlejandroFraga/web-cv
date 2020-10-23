@@ -1,0 +1,284 @@
+/* IMAGES */
+
+.image {
+    width: 100%;
+}
+
+.cover-image {
+    height: 100vh;
+    background: url(../images/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* NO SCROLLBAR */
+
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* MARGINS */
+
+.no-margin {
+    margin: 0 !important;
+}
+
+/* MATERIALIZE CHANGES */
+
+/* NAV HOVER DISABLED */
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* NAV  */
+
+nav {
+    min-height: 10vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+}
+
+/* ON SMALL SCREENS */
+nav a.brand-logo {
+    font-size: 5.5vw;
+    letter-spacing: 0.1rem;
+}
+
+/* ON MED AND LARGE SCREENS */
+@media only screen and (min-width: 601px) {
+    nav a.brand-logo {
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+nav ul li a {
+    font-size: 1.6rem;
+    padding-right: 2vw !important;
+}
+
+nav ul li:last-child a {
+    font-size: 1.6rem;
+    padding-right: 4vw !important;
+}
+
+.sidenav a {
+    font-size: 1.6rem !important;
+}
+
+.no-shadows {
+    box-shadow: none !important;
+}
+
+h6 {
+    font-size: 1.3rem;
+}
+
+/* COLORS */
+
+/* BRACKGROUND */
+
+.background-white {
+    background-color: #FAFAFA !important;
+}
+
+.background-red {
+    background-color: #EF5350 !important;
+}
+
+.background-blue {
+    background-color: #26A394 !important;
+}
+
+.background-grey {
+    background-color: #424242 !important;
+}
+
+.background-black {
+    background-color: #212121 !important;
+}
+
+/* TEXT */
+
+.text-white {
+    color: #FAFAFA !important;
+}
+
+.text-red {
+    color: #EF5350 !important;
+}
+
+.text-blue {
+    color: #26A394 !important;
+}
+
+.text-grey {
+    color: #424242 !important;
+}
+
+.text-black {
+    color: #212121 !important;
+}
+
+/* LOGOS */
+
+i.logo-small {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+img.logo-small {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.logo-small {
+    /* For imgs */
+    height: 2.5rem;
+    align-self: center;
+    vertical-align: middle;
+    
+    /* For icons */
+    font-size: 3.7rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+/* FONT */
+
+html {
+    font-family: Oswald;
+    letter-spacing: 0.04rem;
+}
+
+h6 {
+    line-height: 1.7rem;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+.font-size-15 {
+    font-size: 1.5em;
+}
+
+.sidenav-trigger i.material-icons {
+    font-size: 2.6rem;
+}
+
+/* COPYLEFT SYMBOL */
+
+.copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
+}
+
+/* ABOSLUTE POSITION */
+
+.absolute {
+    position: absolute;
+}
+
+/* ABOUT IMAGE SECTION */
+/* ON MED AND SMALL SCREENS */
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    width: 100%;
+}
+
+/* ON LARGE SCREENS */
+@media only screen and (min-width: 993px) {
+    .about-image {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+}
+
+
+/* ABOUT TEXT SECTION */
+/* ON MED AND SMALL SCREENS */
+.about-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ON LARGE SCREENS */
+@media only screen and (min-width: 993px) {
+    .about-text {
+        min-height: 84vh !important;
+    }
+}
+
+/* FOOTERS */
+footer.simple-footer {
+    min-height: 6vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+    font-size: 1.1rem;
+}
+
+footer.logos-footer {
+    min-height: 8vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4vh;
+    font-size: 1.1rem;
+}
+
+/* APPEAR ANIMATION */
+.appear {
+    opacity: 0 !important;
+}
+
+
+/* IMAGES WITH TEXT FOR PROJECTS */
+.image-with-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.text-in-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+.image-with-text {
+    transition: transform .15s; /* Animation */
+}
+
+/* IMAGES WITH TEXT HOVER ANIMATION */
+@media only screen and (min-width: 993px) {
+    .image-with-text:hover img {
+        transform: scale(1.5);
+        transform-origin: 50% 50%;
+        webkit-filter: blur(3px);
+        filter: blur(3px) brightness(0.5);
+    }
+}
