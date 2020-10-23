@@ -1,4 +1,4 @@
-# WEB CV
+# [WEB CV](http://alejandrofraga.me)
 This is the project for my personal website in which I talk about my profesional career
 
 ### TO-DO
@@ -12,7 +12,7 @@ This is the project for my personal website in which I talk about my profesional
 
 The website is divided in these sections:
 
-  - [Projects](http://alejandrofraga.me) - Here I show all my projects that are at least WIP
+  - [Projects](http://alejandrofraga.me/index.html) - Here I show all my projects that are at least WIP
   - [About](http://alejandrofraga.me/about.html) - Here I talk a little about my studies and experience
 
 ### Used tools
