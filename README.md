@@ -1,5 +1,5 @@
 # WEB CV
-This is the project for my personal web page in which I talk about my profesional career
+This is the project for my personal website in which I talk about my profesional career
 
 ### TO-DO
 * End cleaning and commenting all the HTML, CSS and Javascript code
@@ -10,14 +10,14 @@ This is the project for my personal web page in which I talk about my profesiona
 
 ### Sections
 
-The web page is divided in these sections:
+The website is divided in these sections:
 
   - [Projects](http://alejandrofraga.me) - Here I show all my projects that are at least WIP
   - [About](http://alejandrofraga.me/about.html) - Here I talk a little about my studies and experience
 
 ### Used tools
 
-These are the tools that I used for the development of the web page.
+These are the tools that I used for the development of the website.
 | Tool | Info |
 | ------ | ------ |
 | [Materialize](https://materializecss.com) | Materialize, a CSS Framework based on material design
