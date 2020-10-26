@@ -4,7 +4,6 @@ This is the project for my personal website in which I talk about my professiona
 ### TO-DO
 * End cleaning and commenting all the HTML, CSS and Javascript code
 * I want to make a new section that will correspond to a videogame in HTML*
-* HTTPS instead of HTTP to avoid insecure connection
 
 *In this section you'll can play as me in an interactive CV. So instead of reading boring details, you'll be reading boring details inside a videogame. Who doesn't love that?
 
@@ -12,8 +11,8 @@ This is the project for my personal website in which I talk about my professiona
 
 The website is divided in these sections:
 
-  - [About](http://alejandrofraga.me/about.html) - Here I talk a little about my studies and experience
-  - [Projects](http://alejandrofraga.me/index.html) - Here I show all my projects that are at least WIP
+  - [About](http://alejandrofraga.me) - Here I talk a little about my studies and experience
+  - [Projects](http://alejandrofraga.me/projects) - Here I show all my projects that are at least WIP
 
 ### Used tools
 
