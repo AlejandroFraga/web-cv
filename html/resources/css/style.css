@@ -5,11 +5,21 @@
 }
 
 .cover-image {
-    height: 100vh;
+    height: 45vh;
     background: url(../images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media only screen and (min-width: 993px) {
+    .cover-image {
+        height: 84vh;
+        background: url(../images/cover.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 /* NO SCROLLBAR */
@@ -171,10 +181,6 @@ h6 {
     font-weight: 700;
 }
 
-.font-size-15 {
-    font-size: 1.5em;
-}
-
 .sidenav-trigger i.material-icons {
     font-size: 2.6rem;
 }
@@ -266,7 +272,8 @@ footer.logos-footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 2rem;
+    text-shadow: 2px 0 0 #212121, -2px 0 0 #212121, 0 2px 0 #212121, 0 -2px 0 #212121, 1px 1px #212121, -1px -1px 0 #212121, 1px -1px 0 #212121, -1px 1px 0 #212121;
 }
 
 .image-with-text {

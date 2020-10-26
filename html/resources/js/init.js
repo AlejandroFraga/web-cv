@@ -1,6 +1,6 @@
 $(document).ready(function() {
     /* SIDENAV LOAD */
-    $('.sidenav').sidenav();
+    $('.sidenav').sidenav().on('click tap', 'li a', () => { $('.sidenav').sidenav('close'); });;
     
     /* MAKE THE FIRST CHECK BEFORE EVEN SCROLL */
     checkAppearAnimations();

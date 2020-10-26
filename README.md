@@ -1,5 +1,5 @@
 # [WEB CV](http://alejandrofraga.me)
-This is the project for my personal website in which I talk about my profesional career
+This is the project for my personal website in which I talk about my professional career
 
 ### TO-DO
 * End cleaning and commenting all the HTML, CSS and Javascript code
