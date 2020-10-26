@@ -1,125 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- META INFORMATION -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Alejandro Fraga</title>
 
-<head>
-    <!-- META INFORMATION -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alejandro Fraga</title>
-    
-    <!-- FAVICON AND APP INFORMATION -->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="resources/favicon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/favicon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/favicon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="resources/favicon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="resources/favicon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="resources/favicon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="resources/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="resources/favicon/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="resources/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="resources/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="resources/favicon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="resources/favicon/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="Alejandro Fraga"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="resources/favicon/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="resources/favicon/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="resources/favicon/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="resources/favicon/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="resources/favicon/mstile-310x310.png" />
+        <!-- FAVICON AND APP INFORMATION -->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="resources/favicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/favicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/favicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="resources/favicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="resources/favicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="resources/favicon/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="resources/favicon/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="Alejandro Fraga"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="resources/favicon/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="resources/favicon/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="resources/favicon/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="resources/favicon/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="resources/favicon/mstile-310x310.png" />
 
-    <!-- FONTS AND CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
+        <!-- FONTS AND CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="resources/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
 
-<body>
-    <nav class="background-black no-shadows">
-        <div class="nav-wrapper">
-            <a class="appear brand-logo center no-margin text-white bolder">ALEJANDRO FRAGA</a>
-            
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                <i class="material-icons text-white">menu</i>
-            </a>
-            
-            <ul class="right hide-on-med-and-down">
-                <li><a class="appear text-red bold" href="#about">about</a></li>
-                <li><a class="appear text-white" href="projects/">projects</a></li>
-            </ul>
-        </div>
-    </nav>
+    <body>
+            <!-- NAV BAR  -->
+        <nav class="background-black no-shadows">
+            <div class="nav-wrapper">
+                <a class="appear brand-logo center no-margin text-white bolder">ALEJANDRO FRAGA</a>
 
-    <ul class="sidenav background-white" id="mobile-demo">
-        <li><a href="#about" class="text-red bold">about</a></li>
-        <li><a href="projects/" class="text-grey">projects</a></li>
-    </ul>
-    
-    <div class="row no-margin">
-        
-        <div class="col offset-s2 s8 offset-m4 m4 l5 xl4">
-            <img class="appear about-image" src="resources/images/about.png" alt="Alejandro Fraga - About me">
-        </div>
-        
-        <div id="about" class="about-text col s12 m12 l7 xl8 background-blue">
-            <div class="section container">
-                <h3 class="appear center text-black bolder">ABOUT</h3>
-                
-                <h5 class="appear text-grey bold">
-                    Hi! I'm Alejandro Fraga Cimadevila. A game programmer based in Galicia (Spain).
-                </h5>
-                <h6 class="appear text-white">
-                    I love videogames. Playing or making them. I just finished the <a class="text-red bold" href="http://www.videojuegos-ucm.es" target="_blank" rel="noopener noreferrer">Master in Video Game Development with Honors</a> in the <a class="text-red bold" href="https://www.ucm.es/english" target="_blank" rel="noopener noreferrer">Complutense University of Madrid</a>. Starting my professional career in the Videogames Industry. Graduated in Computer Engineering. I’ve been working in Software Companies from Madrid and Santiago de Compostela.
-                </h6>
-                
-                <h5 class="appear text-grey bold">
-                    My Journey
-                </h5>
-                <h6 class="appear text-white">
-                    I studied <a class="text-red bold" href="https://www.usc.gal/en/studies/degrees/engineering-and-architecture/computer-engineering-degree" target="_blank" rel="noopener noreferrer">Computer Engineering</a> in the <a class="text-red bold" href="https://www.usc.gal/en" target="_blank" rel="noopener noreferrer">University of Santiago de Compostela</a>. While studying, I made extracurricular practices in <a class="text-red bold" href="https://bahiasoftware.es/home" target="_blank" rel="noopener noreferrer">Bahia Software</a>, a Software Consultancy, as Full-Stack Developer. After that, they offered me a job as an Intern Developer.
-                </h6>
-                <h6 class="appear text-white">
-                    I moved to Madrid to study the Master in Video Game Development. The goal of the is to specialize IT Engineers in Professional Videogames Programming. There I worked at <a class="text-red bold" href="https://expleogroup.com" target="_blank" rel="noopener noreferrer">Expleo Group</a>, a Software Consultancy, as a Backend developer in charge of the maintenance of an application for <a class="text-red bold" href="https://www.mobility.siemens.com/global/en.html" target="_blank" rel="noopener noreferrer">Siemens</a>.
-                </h6>
-                <h6 class="appear text-white">
-                    The Final Master Project consisted of the development of a PC Videogame within a team (20+ people), divided in 5 specialized departments, using <a class="text-red bold" href="https://www.unrealengine.com/en-US/" target="_blank" rel="noopener noreferrer">Unreal Engine 4</a>. Work skills are developed in a multidisciplinary group, and a finished product is built. This product is <a class="text-red bold" href="https://loopgang-studios.itch.io/voidout" target="_blank" rel="noopener noreferrer">Voidout</a>.
-                </h6>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons text-white">menu</i>
+                </a>
 
-                <h5 class="appear section center text-grey bold">
-                    View my resume <a class="text-red" href="resources/docs/CV%20EN%20Alejandro%20Fraga%20Cimadevila.pdf" target="_blank" rel="noopener noreferrer">here</a>
-                </h5>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="appear text-red bold" href="#about">about</a></li>
+                    <li><a class="appear text-white" href="projects/">projects</a></li>
+                </ul>
+            </div>
+        </nav>
 
+        <!-- SIDENAV  -->
+        <ul class="sidenav background-white" id="mobile-demo">
+            <li><a href="#about" class="text-red bold">about</a></li>
+            <li><a href="projects/" class="text-grey">projects</a></li>
+        </ul>
+
+        <div class="row no-margin">
+
+            <!-- SIDE ABOUT IMAGE  -->
+            <div class="col offset-s2 s8 offset-m4 m4 l5 xl4">
+                <img class="appear about-image" src="resources/images/about.png" alt="Alejandro Fraga - About me">
+            </div>
+
+            <!-- ABOUT TEXT  -->
+            <div id="about" class="about-text col s12 m12 l7 xl8 background-blue">
+                <div class="section container">
+                    
+                    <!-- ABOUT  -->
+                    <h3 class="appear center text-black bolder">ABOUT</h3>
+
+                    <h5 class="appear text-black bold">
+                        Hi! I'm Alejandro Fraga Cimadevila. A game programmer based in Galicia (Spain).
+                    </h5>
+                    
+                    <h6 class="appear text-white">
+                        I love videogames. Playing or making them. I just finished the <a class="text-grey bold" href="http://www.videojuegos-ucm.es" target="_blank" rel="noopener noreferrer">Master in Video Game Development with Honors</a> in the <a class="text-grey bold" href="https://www.ucm.es/english" target="_blank" rel="noopener noreferrer">Complutense University of Madrid</a>. Starting my professional career in the Videogames Industry. Graduated in Computer Engineering. I’ve been working in Software Companies from Madrid and Santiago de Compostela.
+                    </h6>
+
+                    <!-- MY JOURNEY  -->
+                    <h5 class="appear text-black bold">
+                        My Journey
+                    </h5>
+                    
+                    <h6 class="appear text-white">
+                        I studied <a class="text-grey bold" href="https://www.usc.gal/en/studies/degrees/engineering-and-architecture/computer-engineering-degree" target="_blank" rel="noopener noreferrer">Computer Engineering</a> in the <a class="text-grey bold" href="https://www.usc.gal/en" target="_blank" rel="noopener noreferrer">University of Santiago de Compostela</a>. While studying, I made extracurricular practices in <a class="text-grey bold" href="https://bahiasoftware.es/home" target="_blank" rel="noopener noreferrer">Bahia Software</a>, a Software Consultancy, as Full-Stack Developer. After that, they offered me a job as an Intern Developer.
+                    </h6>
+                    
+                    <h6 class="appear text-white">
+                        I moved to Madrid to study the Master in Video Game Development. The goal of the is to specialize IT Engineers in Professional Videogames Programming. There I worked at <a class="text-grey bold" href="https://expleogroup.com" target="_blank" rel="noopener noreferrer">Expleo Group</a>, a Software Consultancy, as a Backend developer in charge of the maintenance of an application for <a class="text-grey bold" href="https://www.mobility.siemens.com/global/en.html" target="_blank" rel="noopener noreferrer">Siemens</a>.
+                    </h6>
+                    <h6 class="appear text-white">
+                        The Final Master Project consisted of the development of a PC Videogame within a team (20+ people), divided in 5 specialized departments, using <a class="text-grey bold" href="https://www.unrealengine.com/en-US/" target="_blank" rel="noopener noreferrer">Unreal Engine 4</a>. Work skills are developed in a multidisciplinary group, and a finished product is built. This product is <a class="text-grey bold" href="https://loopgang-studios.itch.io/voidout" target="_blank" rel="noopener noreferrer">Voidout</a>.
+                    </h6>
+
+                    <!-- MY RESUME  -->
+                    <h5 class="appear section center text-black bold">
+                        View my resume <a class="text-red" href="resources/docs/CV%20EN%20Alejandro%20Fraga%20Cimadevila.pdf" target="_blank" rel="noopener noreferrer">here</a>
+                    </h5>
+                </div>
+
+                <!-- CONTACT  -->
                 <div class="appear section center">
+
+                    <!-- GITHUB  -->
                     <a href="https://github.com/AlejandroFraga" target="_blank" rel="noopener noreferrer">
                         <img class="logo-small" src="resources/logos/GitHub_White.png" alt="Github">
                     </a>
+
+                    <!-- LINKEDIN  -->
                     <a href="https://www.linkedin.com/in/alejandro-fraga/" target="_blank" rel="noopener noreferrer">
                         <img class="logo-small" src="resources/logos/LinkedIn_White.png" alt="Github">
                     </a>
+
+                    <!-- EMAIL  -->
                     <a href="mailto:alex_fraga95@hotmail.com" target="_blank" rel="noopener noreferrer">
                         <i class="logo-small text-white material-icons">mail_outline</i>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <footer class="page-footer simple-footer background-grey no-padding">
-        <div class="footer-copyright no-padding">
-            <div class="container text-white">
-                Copyleft <span class="copyleft">&copy;</span> 2020 Alejandro Fraga Cimadevila
+
+        <!-- FOOTER  -->
+        <footer class="page-footer simple-footer background-grey no-padding">
+            <div class="footer-copyright no-padding">
+                <div class="container text-white">
+                    Copyleft <span class="copyleft">&copy;</span> 2020 Alejandro Fraga Cimadevila
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 
-    <!--  Scripts-->
-    <script src="resources/js/jquery-3.4.1.js"></script>
-    <script src="resources/js/materialize.js"></script>
-    <script src="resources/js/init.js"></script>
+        <!--  SCRIPTS -->
+        <script src="resources/js/jquery-3.4.1.min.js"></script>
+        <script src="resources/js/materialize.min.js"></script>
+        <script src="resources/js/init.js"></script>
 
-</body>
-
+    </body>
 </html>

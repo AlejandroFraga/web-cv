@@ -1,27 +1,3 @@
-/* IMAGES */
-
-.image {
-    width: 100%;
-}
-
-.cover-image {
-    height: 45vh;
-    background: url(../images/cover.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-@media only screen and (min-width: 993px) {
-    .cover-image {
-        height: 84vh;
-        background: url(../images/cover.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
 /* NO SCROLLBAR */
 
 html {
@@ -39,7 +15,36 @@ html::-webkit-scrollbar {
     margin: 0 !important;
 }
 
+/* POSITIONS */
+
+.absolute {
+    position: absolute;
+}
+
 /* MATERIALIZE CHANGES */
+
+/* FONT */
+
+html {
+    font-family: Oswald;
+    letter-spacing: 0.04rem;
+}
+
+h6 {
+    line-height: 1.7rem;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+.sidenav-trigger i.material-icons {
+    font-size: 2.6rem;
+}
 
 /* NAV HOVER DISABLED */
 
@@ -138,6 +143,12 @@ h6 {
     color: #212121 !important;
 }
 
+/* IMAGES */
+
+.image {
+    width: 100%;
+}
+
 /* LOGOS */
 
 i.logo-small {
@@ -162,104 +173,32 @@ img.logo-small {
     text-align: center;
 }
 
-/* FONT */
-
-html {
-    font-family: Oswald;
-    letter-spacing: 0.04rem;
-}
-
-h6 {
-    line-height: 1.7rem;
-}
-
-.bold {
-    font-weight: 500;
-}
-
-.bolder {
-    font-weight: 700;
-}
-
-.sidenav-trigger i.material-icons {
-    font-size: 2.6rem;
-}
-
-/* COPYLEFT SYMBOL */
-
-.copyleft {
-  display:inline-block;
-  transform: rotate(180deg);
-}
-
-/* ABOSLUTE POSITION */
-
-.absolute {
-    position: absolute;
-}
-
-/* ABOUT IMAGE SECTION */
-/* ON MED AND SMALL SCREENS */
-.about-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
-    width: 100%;
-}
-
-/* ON LARGE SCREENS */
-@media only screen and (min-width: 993px) {
-    .about-image {
-        display: block;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-    }
-}
-
-
-/* ABOUT TEXT SECTION */
-/* ON MED AND SMALL SCREENS */
-.about-text {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* ON LARGE SCREENS */
-@media only screen and (min-width: 993px) {
-    .about-text {
-        min-height: 84vh !important;
-    }
-}
-
-/* FOOTERS */
-footer.simple-footer {
-    min-height: 6vh;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 6vh;
-    font-size: 1.1rem;
-}
-
-footer.logos-footer {
-    min-height: 8vh;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 4vh;
-    font-size: 1.1rem;
-}
-
 /* APPEAR ANIMATION */
+
 .appear {
     opacity: 0 !important;
 }
 
+/* COVER IMAGE */
+
+/* ON MED AND SMALL SCREENS */
+.cover-image {
+    height: 45vh;
+    background: url(../images/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ON LARGE SCREENS */
+@media only screen and (min-width: 993px) {
+    .cover-image {
+        height: 84vh;
+    }
+}
 
 /* IMAGES WITH TEXT FOR PROJECTS */
+
 .image-with-text {
     position: relative;
     text-align: center;
@@ -297,4 +236,67 @@ footer.logos-footer {
         webkit-filter: blur(3px);
         filter: blur(3px) brightness(0.5);
     }
+}
+
+/* ABOUT TEXT SECTION */
+
+/* ON MED AND SMALL SCREENS */
+.about-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ON LARGE SCREENS */
+@media only screen and (min-width: 993px) {
+    .about-text {
+        min-height: 84vh !important;
+    }
+}
+
+/* ABOUT IMAGE SECTION */
+
+/* ON MED AND SMALL SCREENS */
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    width: 100%;
+}
+
+/* ON LARGE SCREENS */
+@media only screen and (min-width: 993px) {
+    .about-image {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+}
+
+/* FOOTERS */
+footer.simple-footer {
+    min-height: 6vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+    font-size: 1.1rem;
+}
+
+footer.logos-footer {
+    min-height: 8vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4vh;
+    font-size: 1.1rem;
+}
+
+/* COPYLEFT SYMBOL */
+
+.copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
 }

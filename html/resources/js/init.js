@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    /* SIDENAV LOAD */
+    /* SIDENAV LOAD AND CLOSE ON CLICK */
     $('.sidenav').sidenav().on('click tap', 'li a', () => { $('.sidenav').sidenav('close'); });;
     
     /* MAKE THE FIRST CHECK BEFORE EVEN SCROLL */
@@ -47,5 +47,6 @@ function prepareAppear(element, i) {
 function appearAnimation(element) {
     var appearDuration = 1000;
     
+    /* AFTER APPEARDURATION MS THE OPACITY CHANGES FROM 0 TO 1 */
     element.css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, appearDuration);
 }

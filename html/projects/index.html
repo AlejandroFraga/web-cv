@@ -1,125 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- META INFORMATION -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Alejandro Fraga</title>
 
-<head>
-    <!-- META INFORMATION -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Alejandro Fraga</title>
-    
-    <!-- FAVICON AND APP INFORMATION -->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../resources/favicon/apple-touch-icon-57x57.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../resources/favicon/apple-touch-icon-114x114.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../resources/favicon/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../resources/favicon/apple-touch-icon-144x144.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../resources/favicon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../resources/favicon/apple-touch-icon-120x120.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../resources/favicon/apple-touch-icon-76x76.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../resources/favicon/apple-touch-icon-152x152.png"/>
-    <link rel="icon" type="image/png" href="../resources/favicon/favicon-196x196.png" sizes="196x196"/>
-    <link rel="icon" type="image/png" href="../resources/favicon/favicon-96x96.png" sizes="96x96"/>
-    <link rel="icon" type="image/png" href="../resources/favicon/favicon-32x32.png" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="../resources/favicon/favicon-16x16.png" sizes="16x16"/>
-    <link rel="icon" type="image/png" href="../resources/favicon/favicon-128.png" sizes="128x128"/>
-    <meta name="application-name" content="Alejandro Fraga"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF"/>
-    <meta name="msapplication-TileImage" content="../resources/favicon/mstile-144x144.png"/>
-    <meta name="msapplication-square70x70logo" content="../resources/favicon/mstile-70x70.png"/>
-    <meta name="msapplication-square150x150logo" content="../resources/favicon/mstile-150x150.png"/>
-    <meta name="msapplication-wide310x150logo" content="../resources/favicon/mstile-310x150.png"/>
-    <meta name="msapplication-square310x310logo" content="../resources/favicon/mstile-310x310.png"/>
+        <!-- FAVICON AND APP INFORMATION -->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../resources/favicon/apple-touch-icon-57x57.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../resources/favicon/apple-touch-icon-114x114.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../resources/favicon/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../resources/favicon/apple-touch-icon-144x144.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../resources/favicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../resources/favicon/apple-touch-icon-120x120.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../resources/favicon/apple-touch-icon-76x76.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../resources/favicon/apple-touch-icon-152x152.png"/>
+        <link rel="icon" type="image/png" href="../resources/favicon/favicon-196x196.png" sizes="196x196"/>
+        <link rel="icon" type="image/png" href="../resources/favicon/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/png" href="../resources/favicon/favicon-32x32.png" sizes="32x32"/>
+        <link rel="icon" type="image/png" href="../resources/favicon/favicon-16x16.png" sizes="16x16"/>
+        <link rel="icon" type="image/png" href="../resources/favicon/favicon-128.png" sizes="128x128"/>
+        <meta name="application-name" content="Alejandro Fraga"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF"/>
+        <meta name="msapplication-TileImage" content="../resources/favicon/mstile-144x144.png"/>
+        <meta name="msapplication-square70x70logo" content="../resources/favicon/mstile-70x70.png"/>
+        <meta name="msapplication-square150x150logo" content="../resources/favicon/mstile-150x150.png"/>
+        <meta name="msapplication-wide310x150logo" content="../resources/favicon/mstile-310x150.png"/>
+        <meta name="msapplication-square310x310logo" content="../resources/favicon/mstile-310x310.png"/>
 
-    <!-- FONTS AND CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="../resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
+        <!-- FONTS AND CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="../resources/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
 
-<body>
-    <nav class="background-black no-shadows">
-        <div class="nav-wrapper">
-            <a class="appear brand-logo center no-margin text-white bolder">ALEJANDRO FRAGA</a>
-            
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                <i class="material-icons text-white">menu</i>
-            </a>
-            
-            <ul class="right hide-on-med-and-down">
-                <li><a class="appear text-white" href="../">about</a></li>
-                <li><a class="appear text-red bold" href="#projects">projects</a></li>
-            </ul>
-        </div>
-    </nav>
+    <body>
+        <!-- NAV BAR  -->
+        <nav class="background-black no-shadows">
+            <div class="nav-wrapper">
+                <a class="appear brand-logo center no-margin text-white bolder">ALEJANDRO FRAGA</a>
 
-    <ul class="sidenav background-white" id="mobile-demo">
-        <li><a href="../" class="text-grey">about</a></li>
-        <li><a href="#projects" class="text-red bold">projects</a></li>
-    </ul>
-    
-    <div class="row no-margin">
-        
-        <div class="appear cover-image col s12 m12 l5 xl4"></div>
-        
-        <div class="col s12 m12 l7 xl8 no-padding">
-            <div id="projects">
-                <h3 class="appear section center bolder text-black">PROJECTS</h3>
+                <a href="#" data-target="mobile-sidenav" class="sidenav-trigger">
+                    <i class="material-icons text-white">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="appear text-white" href="../">about</a></li>
+                    <li><a class="appear text-red bold" href="#projects">projects</a></li>
+                </ul>
             </div>
+        </nav>
 
-            <div class="row no-margin">
-                <div class="section container">
-                    <div class="appear image-with-text col s12 m6 l6 xl4">
-                        <a href="https://loopgang-studios.itch.io/voidout" target="_blank" rel="noopener noreferrer">
-                            <img src="../resources/projects/voidout.png" alt="Voidout project" class="image">
-                            <div class="text-in-image text-white bolder">VOIDOUT</div>
-                        </a>
-                    </div>
+        <!-- SIDENAV  -->
+        <ul class="sidenav background-white" id="mobile-sidenav">
+            <li><a href="../" class="text-grey">about</a></li>
+            <li><a href="#projects" class="text-red bold">projects</a></li>
+        </ul>
 
-                    <div class="appear image-with-text col s12 m6 l6 xl4">
-                        <a href="https://github.com/AlejandroFraga/web-cv" target="_blank" rel="noopener noreferrer">
-                            <img src="../resources/projects/web-cv.png" alt="Web CV project" class="image">
-                            <div class="text-in-image text-white bolder">WEB CV</div>
-                        </a>
-                    </div>
-                    <div class="appear image-with-text col s12 m6 l6 xl4">
-                        <a href="https://github.com/AlejandroFraga/horde-on-time" target="_blank" rel="noopener noreferrer">
-                            <img src="../resources/projects/unity_white.png" alt="Web CV project" class="image">
-                            <div class="text-in-image text-white bolder">HORDE ON TIME</div>
-                        </a>
+        <div class="row no-margin">
+
+            <!-- SIDE COVER IMAGE  -->
+            <div class="appear cover-image col s12 m12 l5 xl4"></div>
+
+            <!-- PROJECTS  -->
+            <div class="col s12 m12 l7 xl8 no-padding">
+                <div id="projects">
+                    <h3 class="appear section center bolder text-black">PROJECTS</h3>
+                </div>
+
+                <div class="row no-margin">
+                    <div class="section container">
+
+                        <!-- VOIDOUT  -->
+                        <div class="appear image-with-text col s12 m6 l6 xl4">
+                            <a href="https://loopgang-studios.itch.io/voidout" target="_blank" rel="noopener noreferrer">
+                                <img src="../resources/projects/voidout.png" alt="Voidout project" class="image">
+                                <div class="text-in-image text-white bolder">VOIDOUT</div>
+                            </a>
+                        </div>
+
+                        <!--WEB CV  -->
+                        <div class="appear image-with-text col s12 m6 l6 xl4">
+                            <a href="https://github.com/AlejandroFraga/web-cv" target="_blank" rel="noopener noreferrer">
+                                <img src="../resources/projects/web-cv.png" alt="Web CV project" class="image">
+                                <div class="text-in-image text-white bolder">WEB CV</div>
+                            </a>
+                        </div>
+
+                        <!-- HORDE ON TIME  -->
+                        <div class="appear image-with-text col s12 m6 l6 xl4">
+                            <a href="https://github.com/AlejandroFraga/horde-on-time" target="_blank" rel="noopener noreferrer">
+                                <img src="../resources/projects/unity_white.png" alt="Web CV project" class="image">
+                                <div class="text-in-image text-white bolder">HORDE ON TIME</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="row no-margin">
+
+                <!-- CONTACT  -->
                 <div class="appear section center">
+
+                    <!-- GITHUB  -->
                     <a href="https://github.com/AlejandroFraga" target="_blank" rel="noopener noreferrer">
                         <img class="logo-small" src="../resources/logos/GitHub_Black.png" alt="Github">
                     </a>
+
+                    <!-- LINKEDIN  -->
                     <a href="https://www.linkedin.com/in/alejandro-fraga/" target="_blank" rel="noopener noreferrer">
                         <img class="logo-small" src="../resources/logos/LinkedIn_Black.png" alt="Github">
                     </a>
+
+                    <!-- EMAIL  -->
                     <a href="mailto:alex_fraga95@hotmail.com" target="_blank" rel="noopener noreferrer">
                         <i class="logo-small text-black material-icons">mail_outline</i>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <footer class="page-footer simple-footer background-grey no-padding">
-        <div class="footer-copyright no-padding">
-            <div class="container text-white">
-                Copyleft <span class="copyleft">&copy;</span> 2020 Alejandro Fraga Cimadevila
+
+        <!-- FOOTER  -->
+        <footer class="page-footer simple-footer background-grey no-padding">
+            <div class="footer-copyright no-padding">
+                <div class="container text-white">
+                    Copyleft <span class="copyleft">&copy;</span> 2020 Alejandro Fraga Cimadevila
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 
-    <!--  Scripts-->
-    <script src="../resources/js/jquery-3.4.1.js"></script>
-    <script src="../resources/js/materialize.js"></script>
-    <script src="../resources/js/init.js"></script>
+        <!--  SCRIPTS -->
+        <script src="../resources/js/jquery-3.4.1.min.js"></script>
+        <script src="../resources/js/materialize.min.js"></script>
+        <script src="../resources/js/init.js"></script>
 
-</body>
-
+    </body>
 </html>
