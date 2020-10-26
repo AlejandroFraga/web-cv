@@ -1,4 +1,6 @@
+/* WHEN THE DOCUMENT HAS BEEN LOADED */
 $(document).ready(function() {
+    
     /* SIDENAV LOAD AND CLOSE ON CLICK */
     $('.sidenav').sidenav().on('click tap', 'li a', () => { $('.sidenav').sidenav('close'); });;
     
