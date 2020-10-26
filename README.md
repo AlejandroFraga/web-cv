@@ -12,8 +12,8 @@ This is the project for my personal website in which I talk about my professiona
 
 The website is divided in these sections:
 
-  - [Projects](http://alejandrofraga.me/index.html) - Here I show all my projects that are at least WIP
   - [About](http://alejandrofraga.me/about.html) - Here I talk a little about my studies and experience
+  - [Projects](http://alejandrofraga.me/index.html) - Here I show all my projects that are at least WIP
 
 ### Used tools
 
