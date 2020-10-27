@@ -7,7 +7,7 @@ The website is divided in these sections:
 
   - [About](http://alejandrofraga.me/about.html) - Here I talk a little about my studies and experience
   - [Projects](http://alejandrofraga.me/index.html) - Here I show all my projects that are at least WIP
-  - IResume - Interactive resume (WIP)
+  - IResume - Interactive resume* (WIP)
 
 >*In this section you'll can play as me in an videogame. So instead of reading boring details, you'll be reading boring details inside a videogame. Who doesn't love that?
 
