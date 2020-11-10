@@ -25,14 +25,14 @@ These are the tools that I used for the development of the website.
 
 As an online resource
 
-```sh
+```html
 <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 ```
 
 As a local resource, first download [here](https://materializecss.com/getting-started.html) and then place it on a folder inside the website
 
-```sh
+```html
 <link href="folder/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <script src="folder/materialize.min.js"></script>
 ```
@@ -42,13 +42,13 @@ As a local resource, first download [here](https://materializecss.com/getting-st
 
 As an online resource
 
-```sh
+```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 ```
 
 As a local resource, first download [here](https://jquery.com/download/) and then place it on a folder inside the website
 
-```sh
+```html
 <script src="folder/materialize.min.js"></script>
 ```
 
@@ -56,7 +56,7 @@ As a local resource, first download [here](https://jquery.com/download/) and the
 
 As an online resource
 
-```sh
+```html
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
@@ -64,7 +64,7 @@ As an online resource
 
 As an online resource
 
-```sh
+```html
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 ```
 
