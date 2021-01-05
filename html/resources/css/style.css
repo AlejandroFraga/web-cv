@@ -17,6 +17,12 @@ html::-webkit-scrollbar {
     margin: 0 !important;
 }
 
+/* WIDTH */
+
+.width-100 {
+    width: 100%;
+}
+
 /* POSITIONS */
 
 .absolute {
@@ -145,12 +151,6 @@ h6 {
     color: #212121 !important;
 }
 
-/* IMAGES */
-
-.image {
-    width: 100%;
-}
-
 /* LOGOS */
 
 i.logo-small {
@@ -208,7 +208,7 @@ img.logo-small {
     overflow: hidden;
 }
 
-.text-in-image {
+.text-in-media {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -237,6 +237,54 @@ img.logo-small {
     .image-with-text:hover img {
         webkit-filter: blur(3px);
         filter: blur(3px) brightness(0.5);
+    }
+}
+
+/* VIDEOS WITH TEXT FOR PROJECTS */
+video::-internal-media-controls-overlay-cast-button {
+    display: none;
+}
+
+.video-with-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    transition: transform .15s; /* Animation */
+}
+
+/* VIDEOS WITH TEXT HOVER ANIMATION */
+.video-with-text .video-hover {
+    webkit-filter: blur(1px);
+    filter: blur(1px) brightness(0.8);
+}
+    
+.video-with-text.hover {
+    opacity: 0;
+}
+    
+.video-with-text.hover .video-hover{
+    webkit-filter: blur(0px);
+    filter: blur(0px) brightness(1);
+}
+
+.video-with-text.hover .text-in-media {
+    opacity: 0;
+}
+
+/* VIDEOS WITH TEXT HOVER ANIMATION */
+@media only screen and (min-width: 993px) {
+    .video-with-text .video-hover {
+        webkit-filter: blur(0px);
+        filter: blur(0px) brightness(1);
+    }
+    
+    .video-with-text .text-in-media {
+        opacity: 1;
+    }
+    
+    .video-with-text:hover .text-in-media {
+        opacity: 0;
     }
 }
 
