@@ -186,7 +186,7 @@ img.logo-small {
 /* ON MED AND SMALL SCREENS */
 .cover-image {
     height: 45vh;
-    background: url(../images/cover.jpg);
+    background: url(../images/projects.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
