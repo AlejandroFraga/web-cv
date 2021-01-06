@@ -17,6 +17,12 @@ html::-webkit-scrollbar {
     margin: 0 !important;
 }
 
+/* PADDING */
+
+.no-padding {
+    padding: 0 !important;
+}
+
 /* WIDTH */
 
 .width-100 {
@@ -206,6 +212,9 @@ img.logo-small {
     text-align: center;
     color: white;
     overflow: hidden;
+    padding: 0 !important;
+    line-height: 0;
+    transition: transform .15s; /* Animation */
 }
 
 .text-in-media {
@@ -213,12 +222,9 @@ img.logo-small {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     text-shadow: 2px 0 0 #212121, -2px 0 0 #212121, 0 2px 0 #212121, 0 -2px 0 #212121, 1px 1px #212121, -1px -1px 0 #212121, 1px -1px 0 #212121, -1px 1px 0 #212121;
-}
-
-.image-with-text {
-    transition: transform .15s; /* Animation */
 }
 
 /* IMAGES WITH TEXT HOVER ANIMATION */
@@ -243,9 +249,12 @@ img.logo-small {
 /* VIDEOS WITH TEXT FOR PROJECTS */
 .video-with-text {
     position: relative;
+    display: block;
     text-align: center;
     color: white;
     overflow: hidden;
+    padding: 0 !important;
+    line-height: 0;
     transition: transform .15s; /* Animation */
 }
 
