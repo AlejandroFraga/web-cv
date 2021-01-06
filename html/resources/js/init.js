@@ -4,8 +4,8 @@ l_size_width = 993;
 $(document).ready(function() {
     
     // Disable remote playback in all videos to hide the cast button
-    $('video').each(function() {
-        $(this).disableRemotePlayback = true;
+    $('.hover-video').each(function() {
+        $(this).get(0).disableRemotePlayback = true;
     });
     
     // SIDENAV LOAD AND CLOSE ON CLICK
@@ -40,7 +40,7 @@ $(document).ready(function() {
 });
 
 
-//TODO Clean the code
+// TODO Clean the code
 // Plays the video on the "center" of the window if the size is bigger that "l"
 function playVideoInCenter(before) {
             
