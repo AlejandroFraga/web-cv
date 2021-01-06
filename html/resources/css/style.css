@@ -241,10 +241,6 @@ img.logo-small {
 }
 
 /* VIDEOS WITH TEXT FOR PROJECTS */
-video::-internal-media-controls-overlay-cast-button {
-    display: none;
-}
-
 .video-with-text {
     position: relative;
     text-align: center;

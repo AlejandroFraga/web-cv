@@ -3,6 +3,11 @@ l_size_width = 993;
 // WHEN THE DOCUMENT HAS BEEN LOADED
 $(document).ready(function() {
     
+    // Disable remote playback in all videos to hide the cast button
+    $('video').each(function() {
+        $(this).disableRemotePlayback = true;
+    });
+    
     // SIDENAV LOAD AND CLOSE ON CLICK
     $('.sidenav').sidenav().on('click tap', 'li a', () => { $('.sidenav').sidenav('close'); });
 
@@ -10,14 +15,13 @@ $(document).ready(function() {
     $('.video-with-text').hover(playVideosHover, loadVideosHover);
     $('.video-with-text').on('playVideos', playVideos);
     $('.video-with-text').on('loadVideos', loadVideos);
-
+    
     // Make the first checks before scrolling
     checkAppearAnimations();
     var before = playVideoInCenter(before);
 
+    // Repeat the functions as we scroll
     $(window).scroll(function() {
-
-        // Repeat the functions as we scroll
         checkAppearAnimations();
         before = playVideoInCenter(before);
     });
@@ -45,6 +49,10 @@ function playVideoInCenter(before) {
         // get the scroll position of the document, all the videos, and create an array for its positions
         var scrollTop = $(document).scrollTop();
         var elements = $('.video-with-text');
+        
+        if(elements.length == 0)
+            return before;
+        
         var positions = [];
 
         // push each of the items we want to check against to an array with their position and selector
@@ -112,7 +120,7 @@ function isOnTheScreen(scrollTop, element) {
     var v1 = element.position().top - $(window).height();
     var v2 = element.position().top + element.height();
     
-    return ( scrollTop > v1 && scrollTop < v2);
+    return (scrollTop > v1 && scrollTop < v2);
 }
 
 // WE PREPARE AN ELEMENT TO APPEAR, WITH A DELAY DEFINED BY IT'S POSITION */
