@@ -1,167 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
-        
         <!-- META INFORMATION -->
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Alejandro Fraga</title>
 
         <!-- FAVICON AND APP INFORMATION -->
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../resources/favicon/apple-touch-icon-57x57.png"/>
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../resources/favicon/apple-touch-icon-114x114.png"/>
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../resources/favicon/apple-touch-icon-72x72.png"/>
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../resources/favicon/apple-touch-icon-144x144.png"/>
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../resources/favicon/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../resources/favicon/apple-touch-icon-120x120.png"/>
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../resources/favicon/apple-touch-icon-76x76.png"/>
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../resources/favicon/apple-touch-icon-152x152.png"/>
-        <link rel="icon" type="image/png" href="../resources/favicon/favicon-196x196.png" sizes="196x196"/>
-        <link rel="icon" type="image/png" href="../resources/favicon/favicon-96x96.png" sizes="96x96"/>
-        <link rel="icon" type="image/png" href="../resources/favicon/favicon-32x32.png" sizes="32x32"/>
-        <link rel="icon" type="image/png" href="../resources/favicon/favicon-16x16.png" sizes="16x16"/>
-        <link rel="icon" type="image/png" href="../resources/favicon/favicon-128.png" sizes="128x128"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="../resources/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../resources/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../resources/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../resources/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../resources/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../resources/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../resources/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../resources/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../resources/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../resources/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../resources/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../resources/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../resources/favicon/android-icon-192x192.png">
+        <link rel="manifest" href="../resources/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../resources/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#000000">
         <meta name="application-name" content="Alejandro Fraga"/>
-        <meta name="msapplication-TileColor" content="#FFFFFF"/>
-        <meta name="msapplication-TileImage" content="../resources/favicon/mstile-144x144.png"/>
-        <meta name="msapplication-square70x70logo" content="../resources/favicon/mstile-70x70.png"/>
-        <meta name="msapplication-square150x150logo" content="../resources/favicon/mstile-150x150.png"/>
-        <meta name="msapplication-wide310x150logo" content="../resources/favicon/mstile-310x150.png"/>
-        <meta name="msapplication-square310x310logo" content="../resources/favicon/mstile-310x310.png"/>
 
         <!-- FONTS AND CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link href="../resources/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+        <link href="../resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     </head>
 
-    <body>
+    <body class="background-black">
+        
         <!-- NAV BAR  -->
-        <nav class="background-black no-shadows">
-            <div class="nav-wrapper">
-                <a class="appear brand-logo center no-margin text-white bolder">ALEJANDRO FRAGA</a>
+        <nav class="no-shadows">
+            <div class="nav-wrapper section container no-padding">
+                <a class="brand-logo hide-on-med-and-down">ALEJANDRO FRAGA CIMADEVILA</a>
+                <a class="brand-logo hide-on-large-only">ALEJANDRO FRAGA</a>
 
-                <a href="#" data-target="mobile-sidenav" class="sidenav-trigger">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons text-white">menu</i>
                 </a>
 
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="appear text-white" href="../">about</a></li>
-                    <li><a class="appear text-red bold" href="#projects">projects</a></li>
+                    <li><a class="text-grey" href="../">ABOUT</a></li>
+                    <li class="text-grey">|</li>
+                    <li><a>PROJECTS</a></li>
+                    <li class="text-grey">|</li>
+                    <li><a onclick="toggleDarkMode();"><i class="logo-small material-icons">light_mode</i></a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- SIDENAV  -->
-        <ul class="sidenav background-white" id="mobile-sidenav">
-            <li><a href="../" class="text-grey">about</a></li>
-            <li><a href="#projects" class="text-red bold">projects</a></li>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="text-grey" href="../">ABOUT</a></li>
+            <li><a>PROJECTS</a></li>
+            <li><a onclick="toggleDarkMode();"><i class="logo-small material-icons">light_mode</i></a></li>
         </ul>
+        
+        <!-- ABOUT ME -->
+        <div class="section container" style="margin-top: 64px;">
+             
+            <div class="row center container-small">
+                <img class="appear col offset-s2 s8 offset-m3 m6 offset-l4 l4 offset-xl5 xl2" src="../resources/images/head.png">
+            </div>
+            
+            <div class="row center">
+                <h5 class="appear">
+                    Hi! I'm Alejandro Fraga Cimadevila
+                </h5>
+            </div>
 
-        <div class="row no-margin">
+            <div class="row center">
+                <h6 class="appear col s12 m12 offset-l2 l8 offset-xl2 xl8">
+                    I love video games. Playing or making them.
+                    <br>
+                    I’ve worked on <a class="external" href="https://store.steampowered.com/app/957710/The_Waylanders">The Waylanders</a> and other unannounced projects at <a class="external" href="http://gatosalvajestudio.com/home">Gato Salvaje Studio</a>.
+                    <br>
+                    I graduated <a class="external" href="http://alejandrofraga.me/resources/docs/Certificate_Video_Game_Development_Alejandro_Fraga_Cimadevila.pdf">with Honors</a> from the <a class="external" href="http://www.videojuegos-ucm.es/">Master in Video Game Development</a> by the <a class="external" href="https://www.ucm.es/english">Complutense University of Madrid</a> and graduated in <a class="external" href="https://www.usc.gal/en/studies/degrees/engineering-and-architecture/computer-engineering-degree">Computer Engineering</a> at the <a class="external" href="https://www.usc.gal/en">University of Santiago de Compostela</a>.
+                </h6>
+            </div>
+        </div>
+        
+        <!-- PROJECTS -->
+        <div class="section container">
+            <div class="row section">
+                <h5 class="appear col s12 m12 l12 xl12">
+                    PROJECTS
+                </h5>
+            </div>
+        
+            <!-- THE WAYLANDERS -->
+            <div class="row section">
+                
+                <div class="appear video-with-text col s12 m12 l4 xl5">
+                    <a class="external" href="https://store.steampowered.com/app/957710/The_Waylanders">
+                        <video class="hover-video width-100" loop muted poster="../resources/projects/the-waylanders.png">
+                            <source src="../resources/projects/the-waylanders.mp4" type="video/mp4"/>
+                        </video>
+                    </a>
+                    <div class="gradient-right width-10vw"></div>
+                    <div class="gradient-left width-10vw"></div>
+                </div>
+                <div class="col s12 m12 l8 xl7">
+                    <h5 class="appear no-margin-top hide-on-med-and-down">
+                        The Waylanders
+                    </h5>
+                    <h5 class="appear hide-on-large-only">
+                        The Waylanders
+                    </h5>
+                    <h7 class="appear">JULY 2021 - FEBRUARY 2022</h7>
 
-            <!-- SIDE COVER IMAGE  -->
-            <div class="appear cover-image col s12 m12 l5 xl4"></div>
+                    <h6 class="appear">
+                        The first meeting between the Celts and their gods, the Tuatha de Danaan, should have been a time of celebration and enlightenment, but when negotiations go catastrophically wrong, a battle against a god leaves you near death and untethered from time!
+                    </h6>
+                    <h6 class="appear">
+                        Return to a land overtaken by magickal corruptions and a kingdom splintered into multiple factions warring for the throne. The Celtic society, a complex tapestry of different religions, human cultures, and mortal and immortal races such as the Mourians, Werewolves, Goblins, and monsters threaten to tear at every seam. Will you support the immature, yet rightful, heir, or the pragmatic general in their bid for the throne? What alliances will you forge, what friendships will you foster, what romances will you pursue, and... what will you do when you are suddenly thrust into Medieval Spain?
+                    </h6>
+                </div>
+                
+            </div>
+        
+            <!-- VOIDOUT -->
+            <div class="row section">
 
-            <!-- PROJECTS  -->
-            <div class="col s12 m12 l7 xl8 no-padding">
-                <div id="projects">
-                    <h3 class="appear section center bolder text-black">PROJECTS</h3>
+                <div class="appear video-with-text col s12 m12 hide-on-large-only">
+                    <a class="external" href="https://github.com/AlejandroFraga/voidout">
+                        <video class="hover-video width-100" loop muted poster="../resources/projects/voidout.png">
+                            <source src="../resources/projects/voidout.mp4" type="video/mp4"/>
+                        </video>
+                    </a>
+                    <div class="gradient-right width-10vw"></div>
+                    <div class="gradient-left width-10vw"></div>
+                </div>
+                
+                <!-- TEXT ON SMALL -->
+                <div class="col s12 m12 l8 xl7">
+                    <h5 class="appear no-margin-top hide-on-med-and-down">
+                        Voidout 
+                    </h5>
+                    <h5 class="appear hide-on-large-only">
+                        Voidout 
+                    </h5>
+                    
+                    <h7 class="appear">JANUARY - JULY 2020</h7>
+
+                    <h6 class="appear">
+                        Voidout is the Final Master Project we made for the Master in Video Game Development by the Complutense University of Madrid.
+                    </h6>
+                    <h6 class="appear">
+                        We are Loopgang Studios. We started as 16 students from the Master, and people from other Masters gave us a hand. They helped us with the music, the animations, the concept art... So, finally, over 30 persons were involved in the development of this project.
+                    </h6>
+                    <h6 class="appear">
+                        We built it from zero using Unreal Entinge 4, C++ and Blueprints.
+                    </h6>
+                    <h6 class="appear">
+                        The version control was made with Perforce.
+                    </h6>
+                    <h6 class="appear">
+                        The final product can be downloaded and played for free on our itch.io webpage.
+                    </h6>
                 </div>
 
-                <div class="row no-margin">
-                    <!-- THE WAYLANDERS -->
-                    <div class="appear video-with-text col s12 m12 l6 xl4">
-                        <a href="https://store.steampowered.com/app/957710/The_Waylanders" target="_blank" rel="noopener noreferrer">
-                            <video class="hover-video width-100" loop muted poster="../resources/projects/the-waylanders.png">
-                                <source src="../resources/projects/the-waylanders.mp4" type="video/mp4"/>
-                            </video>
-                            <div class="text-in-media text-white bolder">THE WAYLANDERS</div>
-                        </a>
-                    </div>
-
-                    <!-- VOIDOUT -->
-                    <div class="appear video-with-text col s12 m12 l6 xl4">
-                        <a href="https://github.com/AlejandroFraga/voidout" target="_blank" rel="noopener noreferrer">
-                            <video class="hover-video width-100" loop muted poster="../resources/projects/voidout.png">
-                                <source src="../resources/projects/voidout.mp4" type="video/mp4"/>
-                            </video>
-                            <div class="text-in-media text-white bolder">VOIDOUT</div>
-                        </a>
-                    </div>
-
-                    <!-- 2051 -->
-                    <div class="appear video-with-text col s12 m12 l6 xl4">
-                        <a href="https://github.com/AlejandroFraga/2051" target="_blank" rel="noopener noreferrer">
-                            <video class="hover-video width-100" loop muted poster="../resources/projects/2051.png">
-                                <source src="../resources/projects/2051.mp4" type="video/mp4"/>
-                            </video>
-                            <div class="text-in-media text-white bolder">2051</div>
-                        </a>
-                    </div>
-
-                    <!-- SYMPLE PYGAME -->
-                    <div class="appear video-with-text col s12 m12 l6 xl4">
-                        <a href="https://github.com/AlejandroFraga/simple-pygame" target="_blank" rel="noopener noreferrer">
-                            <video class="hover-video width-100" loop muted poster="../resources/projects/pygame.png">
-                                <source src="../resources/projects/simple-pygame.mp4" type="video/mp4"/>
-                            </video>
-                            <div class="text-in-media text-white bolder">SIMPLE PYGAME</div>
-                        </a>
-                    </div>
-
-                    <!-- WEB CV -->
-                    <div class="appear image-with-text col s12 m12 l6 xl4">
-                        <a href="https://github.com/AlejandroFraga/web-cv" target="_blank" rel="noopener noreferrer">
-                            <img class="width-100" src="../resources/projects/web-cv.png" alt="Web CV project">
-                            <div class="text-in-media text-white bolder">WEB CV</div>
-                        </a>
-                    </div>
-
-                    <!-- SERVER TELEGRAM BOT -->
-                    <div class="appear image-with-text col s12 m12 l6 xl4">
-                        <a href="https://github.com/AlejandroFraga/server-telegram-bot" target="_blank" rel="noopener noreferrer">
-                            <img class="width-100" src="../resources/projects/python.png" alt="Voidout project">
-                            <div class="text-in-media text-white bolder">SERVER BOT</div>
-                        </a>
-                    </div>
+                <div class="appear video-with-text col l4 xl5 hide-on-med-and-down">
+                    <a class="external" href="https://github.com/AlejandroFraga/voidout">
+                        <video class="hover-video width-100" loop muted poster="../resources/projects/voidout.png">
+                            <source src="../resources/projects/voidout.mp4" type="video/mp4"/>
+                        </video>
+                    </a>
+                    <div class="gradient-right width-10vw"></div>
+                    <div class="gradient-left width-10vw"></div>
                 </div>
+            </div>
+        
+            <!-- 2051 -->
+            <div class="row section">
 
-                <!-- CONTACT  -->
-                <div class="appear section center">
-
-                    <!-- GITHUB  -->
-                    <a href="https://github.com/AlejandroFraga" target="_blank" rel="noopener noreferrer">
-                        <img class="logo-small" src="../resources/logos/GitHub_Black.png" alt="Github">
+                <div class="appear video-with-text col s12 m12 l4 xl5">
+                    <a class="external" href="https://github.com/AlejandroFraga/2051">
+                        <video class="hover-video width-100" loop muted poster="../resources/projects/2051.png">
+                            <source src="../resources/projects/2051.mp4" type="video/mp4"/>
+                        </video>
                     </a>
+                    <div class="gradient-right width-10vw"></div>
+                    <div class="gradient-left width-10vw"></div>
+                </div>
+                <div class="col s12 m12 l8 xl7">
+                    <h5 class="appear no-margin-top hide-on-med-and-down">
+                        2051
+                    </h5>
+                    <h5 class="appear hide-on-large-only">
+                        2051
+                    </h5>
+                    <h7 class="appear">29 - 31 JANUARY 2021</h7>
 
-                    <!-- LINKEDIN  -->
-                    <a href="https://www.linkedin.com/in/alejandro-fraga/" target="_blank" rel="noopener noreferrer">
-                        <img class="logo-small" src="../resources/logos/LinkedIn_Black.png" alt="Github">
-                    </a>
-
-                    <!-- EMAIL  -->
-                    <a href="mailto:alex_fraga95@hotmail.com" target="_blank" rel="noopener noreferrer">
-                        <i class="logo-small text-black material-icons">mail_outline</i>
-                    </a>
+                    <h6 class="appear">
+                        It's the year 2051. you chose this year to open the time capsule that you prepared 30 years ago, which contains the experiences you had (we all had) in 2020, during the lockdown caused by COVID-19.
+                    </h6>
+                    <h6 class="appear">
+                        2051 is a narrative game composed by tiny mini-games.
+                    </h6>
+                    <h6 class="appear">
+                        All these mini-games simulate activities carried out by many of us during the lockdown: making video calls with friends or family, making bread, or doing yoga.
+                    </h6>
+                    <h6 class="appear">
+                        Game made for Global Game Jam 2021. theme was lost &amp; found: our take on the theme is the lost of the routines we used to have before the pandemic, which forced us to find new habits and routines.
+                    </h6>
+                    <h6 class="appear">
+                        Thanks for playing and stay safe :&#41;
+                    </h6>
                 </div>
             </div>
         </div>
 
         <!-- FOOTER  -->
-        <footer class="page-footer simple-footer background-grey no-padding">
-            <div class="footer-copyright no-padding">
-                <div class="container text-white">
+        <footer class="simple-footer">
+            <div class="container">
                     Copyleft <span class="copyleft">&copy;</span> 2022 Alejandro Fraga Cimadevila
-                </div>
             </div>
         </footer>
 
 
         <!--  SCRIPTS -->
         <script src="../resources/js/jquery-3.4.1.min.js"></script>
-        <script src="../resources/js/materialize.min.js"></script>
+        <script src="../resources/js/materialize.js"></script>
         <script src="../resources/js/init.js"></script>
 
     </body>

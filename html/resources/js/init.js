@@ -3,6 +3,28 @@ l_size_width = 993;
 // WHEN THE DOCUMENT HAS BEEN LOADED
 $(document).ready(function() {
     
+    // Set the external links
+    $('.external').each(function() {
+        $(this).attr('target', '_blank');
+        $(this).attr('rel', 'noopener noreferrer');
+    });
+    
+    // Start the modal
+    $('.modal').modal();
+    $('#update-modal').modal('open');
+    
+    // Start the carousel
+    $('.carousel').carousel();
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        dist: 0
+    });
+    setTimeout(autoplay, 6000);
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 6000);
+    }
+    
     // Disable remote playback in all videos to hide the cast button
     $('.hover-video').each(function() {
         $(this).get(0).disableRemotePlayback = true;
@@ -26,7 +48,7 @@ $(document).ready(function() {
         before = playVideoInCenter(before);
     });
 
-    // Function to reload the page in case that the window size changes from "l" to "not l" to avoid problems
+    // Function to reload the page in case that the window size changes from 'l' to 'not l' to avoid problems
     was_l_size = isLSize();
 
     $(window).resize(function() {
@@ -41,7 +63,7 @@ $(document).ready(function() {
 
 
 // TODO Clean the code
-// Plays the video on the "center" of the window if the size is bigger that "l"
+// Plays the video on the 'center' of the window if the size is bigger that 'l'
 function playVideoInCenter(before) {
             
     if(!isLSize()) {
@@ -60,7 +82,7 @@ function playVideoInCenter(before) {
             positions.push({position:$(this).position().top + ($(this).height() / 2), element: $(this)});
         });
 
-        // We get the closest to the center and check if it's in the "center" of the screen
+        // We get the closest to the center and check if it's in the 'center' of the screen
         var getClosest = closest(positions, scrollTop + ($(window).height() / 2));
         if (isOnTheScreenCenter(scrollTop, getClosest)) {
 
@@ -73,7 +95,7 @@ function playVideoInCenter(before) {
                 before = getClosest;
             }
 
-        // If the closest is not on the "center" of the screen, we pause the video before
+        // If the closest is not on the 'center' of the screen, we pause the video before
         } else {
             if(before) {
                 before.removeClass('hover').trigger('loadVideos');
@@ -127,7 +149,7 @@ function isOnTheScreen(scrollTop, element) {
 function prepareAppear(element, i) {
     
     // BEFORE APPEAR, WE MAKE IT DISAPPEAR
-    element.css({opacity: 0.0, visibility: "visible"});
+    element.css({opacity: 0.0, visibility: 'visible'});
 
     // WE SET A TIMEOUT, SO IF A LOT OF ELEMENTS HAVE TO APPEAR AT THE SAME TIME, THEY'RE GRADUALLY SHOWN
     setTimeout(function() {
@@ -141,7 +163,7 @@ function appearAnimation(element) {
     var appearDuration = 1000;
     
     // AFTER APPEARDURATION MS THE OPACITY CHANGES FROM 0 TO 1
-    element.css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, appearDuration);
+    element.css({opacity: 0.0, visibility: 'visible'}).animate({opacity: 1.0}, appearDuration);
 }
 
 // Plays the videos by the hover event, checking that the size is bigger than l
@@ -176,7 +198,7 @@ function loadVideos(e) {
     });
 }
 
-// finds the nearest position (from an array of objects) to the specified number
+// Finds the nearest position (from an array of objects) to the specified number
 function closest(array, number) {
     var num = 0;
     for (var i = array.length - 1; i >= 0; i--) {
@@ -185,4 +207,21 @@ function closest(array, number) {
         }
     }
     return array[num].element;
+}
+
+/* FIXME */
+// Toggle dark mode
+function toggleDarkMode() {
+    if ($('body').hasClass('background-black')) {
+        $('body nav li').last().find('i').html('dark_mode');
+        $('#contact img').first().attr('src', 'resources/logos/GitHub_Black.png');
+        $('#contact img').last().attr('src', 'resources/logos/LinkedIn_Black.png');
+    } else {
+        $('body nav li').last().find('i').html('light_mode');
+        $('#contact img').first().attr('src', 'resources/logos/GitHub_White.png');
+        $('#contact img').last().attr('src', 'resources/logos/LinkedIn_White.png');
+    }
+    
+    $('body').toggleClass('background-white');
+    $('body').toggleClass('background-black');
 }

@@ -17,6 +17,10 @@ html::-webkit-scrollbar {
     margin: 0 !important;
 }
 
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
 /* PADDING */
 
 .no-padding {
@@ -35,25 +39,35 @@ html::-webkit-scrollbar {
     position: absolute;
 }
 
+
 /* MATERIALIZE CHANGES */
 
 /* FONT */
 
 html {
-    font-family: Oswald;
-    letter-spacing: 0.04rem;
+    font-family: "Roboto";
 }
 
-h6 {
-    line-height: 1.7rem;
+h7, .h7 {
+    font-size: 1.25rem;
+    line-height: 1.1;
 }
 
-.bold {
-    font-weight: 500;
+h6, .h6 {
+    font-size: 1.862rem;
+    line-height: 1.15;
 }
 
-.bolder {
-    font-weight: 700;
+h5, .h5 {
+    font-size: 2.4rem;
+    line-height: 1.15;
+    letter-spacing: -.015rem;
+}
+
+h4, .h4 {
+    font-size: 3.4rem;
+    line-height: 1.23;
+    letter-spacing: -.015rem;
 }
 
 .sidenav-trigger i.material-icons {
@@ -68,35 +82,29 @@ nav ul a:hover {
 
 /* NAV  */
 
-nav {
-    min-height: 10vh;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 10vh;
-}
+/* FIXME */
 
 /* ON SMALL SCREENS */
 nav a.brand-logo {
-    font-size: 5.5vw;
+    text-align: center;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
 }
 
 /* ON MED AND LARGE SCREENS */
 @media only screen and (min-width: 601px) {
     nav a.brand-logo {
-        font-size: 2.4rem;
-        letter-spacing: 0.1rem;
+        font-size: 1.5rem;
+        letter-spacing: 0em;
     }
 }
 
 nav ul li a {
-    font-size: 1.6rem;
-    padding-right: 2vw !important;
+    font-size: 1.2rem;
 }
 
 nav ul li:last-child a {
-    font-size: 1.6rem;
-    padding-right: 4vw !important;
+    padding: 0 !important;
 }
 
 .sidenav a {
@@ -107,55 +115,95 @@ nav ul li:last-child a {
     box-shadow: none !important;
 }
 
-h6 {
-    font-size: 1.3rem;
-}
-
 /* COLORS */
 
 /* BRACKGROUND */
 
 .background-white {
-    background-color: #FAFAFA !important;
+    background-color: #ffffff !important;
 }
 
-.background-red {
-    background-color: #EF5350 !important;
-}
-
-.background-blue {
-    background-color: #26A394 !important;
+.background-dark-white {
+    background-color: #f5f5f7 !important;
 }
 
 .background-grey {
-    background-color: #424242 !important;
+    background-color: #a1a1a1 !important;
+}
+
+.background-dark-grey {
+    background-color: #86868b !important;
+}
+
+.background-light-black {
+    background-color: #1d1d1f !important;
 }
 
 .background-black {
-    background-color: #212121 !important;
+    background-color: #000000 !important;
 }
 
 /* TEXT */
 
 .text-white {
-    color: #FAFAFA !important;
+    color: #ffffff !important;
 }
 
-.text-red {
-    color: #EF5350 !important;
-}
-
-.text-blue {
-    color: #26A394 !important;
+.text-dark-white {
+    color: #f5f5f7 !important;
 }
 
 .text-grey {
-    color: #424242 !important;
+    color: #a1a1a1 !important;
+}
+
+.text-dark-grey {
+    color: #86868b !important;
+}
+
+.text-light-black {
+    color: #1d1d1f !important;
 }
 
 .text-black {
-    color: #212121 !important;
+    color: #000000 !important;
 }
+
+/* FIXME */
+
+.background-black h6,
+.background-black .h6,
+.background-black h7,
+.background-black .h7,
+.background-black footer {
+    color: #a1a1a1;
+}
+
+.background-black h3,
+.background-black h4,
+.background-black h5,
+.background-black a,
+.background-black bold {
+    color: #ffffff;
+}
+
+.background-white h6,
+.background-white .h6,
+.background-white h7,
+.background-white .h7,
+.background-white footer {
+    color: #86868b;
+}
+
+.background-white h3,
+.background-white h4,
+.background-white h5,
+.background-white a,
+.background-white bold {
+    color: #1d1d1f;
+}
+
+/* FIXME */
 
 /* LOGOS */
 
@@ -191,8 +239,9 @@ img.logo-small {
 
 /* ON MED AND SMALL SCREENS */
 .cover-image {
-    height: 45vh;
-    background: url(../images/projects.jpg);
+    /* FIXME */
+    /* height: 45vh; */
+    background: url(../images/IMG_81141610121499358.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -201,7 +250,8 @@ img.logo-small {
 /* ON LARGE SCREENS */
 @media only screen and (min-width: 993px) {
     .cover-image {
-        height: 84vh;
+        /* FIXME */
+        /* height: 84vh; */
     }
 }
 
@@ -297,14 +347,14 @@ img.logo-small {
 
 /* ON MED AND SMALL SCREENS */
 .about-text {
-    text-align: justify;
-    text-justify: inter-word;
+    /* FIXME */
 }
 
 /* ON LARGE SCREENS */
 @media only screen and (min-width: 993px) {
     .about-text {
-        min-height: 84vh !important;
+        /* FIXME */
+        /* min-height: 84vh !important; */
     }
 }
 
@@ -334,24 +384,96 @@ img.logo-small {
 
 /* FOOTERS */
 footer.simple-footer {
-    min-height: 6vh;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 6vh;
-    font-size: 1.1rem;
-}
-
-footer.logos-footer {
-    min-height: 8vh;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 4vh;
-    font-size: 1.1rem;
+    width: 100vw;
+    font-size: 1rem;
+    line-height: 3vh;
 }
 
 /* COPYLEFT SYMBOL */
 
 .copyleft {
-  display:inline-block;
+  display: inline-block;
   transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIXME */
+
+.background-black .nav-wrapper {
+    height: 60px;
+    border-bottom: 2px solid #a1a1a1;
+}
+
+.background-white .nav-wrapper {
+    height: 60px;
+    border-bottom: 2px solid #86868b;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: none !important;
+    width: 90% !important;
+}
+
+.container-small {
+    margin: 0 auto;
+    max-width: none !important;
+    width: 55% !important;
+}
+
+.carousel-slider {
+    height: 100% !important;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: saturate(180%) blur(2rem);
+}
+
+.background-black nav {
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.background-white nav {
+    background-color: rgba(255, 255, 255, 0.72);
+}
+
+.gradient-left {
+    background-image: linear-gradient(to right, black, transparent);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5vw;
+}
+
+.gradient-right {
+    background-image: linear-gradient(to left, black, transparent);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 5vw;
+}
+
+.width-10vw {
+    width: 10vw;
 }
