@@ -29,77 +29,67 @@
 
         <!-- FONTS AND CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Urbanist:wght@300;600;700&display=swap" rel="stylesheet">
         <link href="../resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     </head>
 
-    <body class="background-black">
+    <body>
         
         <!-- NAV BAR  -->
-        <nav class="no-shadows">
+        <nav>
             <div class="nav-wrapper section container no-padding">
-                <a class="brand-logo hide-on-med-and-down">ALEJANDRO FRAGA CIMADEVILA</a>
-                <a class="brand-logo hide-on-large-only">ALEJANDRO FRAGA</a>
+                <a class="brand-logo semibold hide-on-med-and-down">ALEJANDRO FRAGA CIMADEVILA</a>
+                <a class="brand-logo semibold hide-on-large-only">ALEJANDRO FRAGA</a>
 
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                    <i class="material-icons text-white">menu</i>
+                    <i class="material-icons">menu</i>
                 </a>
 
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="text-grey" href="../">ABOUT</a></li>
-                    <li class="text-grey">|</li>
-                    <li><a>PROJECTS</a></li>
-                    <li class="text-grey">|</li>
-                    <li><a onclick="toggleDarkMode();"><i class="logo-small material-icons">light_mode</i></a></li>
+                    <li><a href="../">ABOUT</a></li>
+                    <li>|</li>
+                    <li><a class="semibold">PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- SIDENAV  -->
         <ul class="sidenav" id="mobile-demo">
-            <li><a class="text-grey" href="../">ABOUT</a></li>
-            <li><a>PROJECTS</a></li>
-            <li><a onclick="toggleDarkMode();"><i class="logo-small material-icons">light_mode</i></a></li>
+            <li><a href="../">ABOUT</a></li>
+            <li><a class="semibold">PROJECTS</a></li>
         </ul>
         
         <!-- ABOUT ME -->
         <div class="section container" style="margin-top: 64px;">
              
             <div class="row center container-small">
-                <img class="appear col offset-s2 s8 offset-m3 m6 offset-l4 l4 offset-xl5 xl2" src="../resources/images/head.png">
+                <img class="appear col offset-s3 s6 offset-m4 m4 offset-l5 l2 offset-xl5 xl2" src="../resources/images/head.png">
             </div>
             
             <div class="row center">
-                <h5 class="appear">
+                <h3 class="appear">
                     Hi! I'm Alejandro Fraga Cimadevila
-                </h5>
-            </div>
-
-            <div class="row center">
-                <h6 class="appear col s12 m12 offset-l2 l8 offset-xl2 xl8">
+                </h3>
+                <h4 class="appear no-margin-top col s12 m12 offset-l2 l8 offset-xl2 xl8">
                     I love video games. Playing or making them.
                     <br>
                     I’ve worked on <a class="external" href="https://store.steampowered.com/app/957710/The_Waylanders">The Waylanders</a> and other unannounced projects at <a class="external" href="http://gatosalvajestudio.com/home">Gato Salvaje Studio</a>.
                     <br>
-                    I graduated <a class="external" href="http://alejandrofraga.me/resources/docs/Certificate_Video_Game_Development_Alejandro_Fraga_Cimadevila.pdf">with Honors</a> from the <a class="external" href="http://www.videojuegos-ucm.es/">Master in Video Game Development</a> by the <a class="external" href="https://www.ucm.es/english">Complutense University of Madrid</a> and graduated in <a class="external" href="https://www.usc.gal/en/studies/degrees/engineering-and-architecture/computer-engineering-degree">Computer Engineering</a> at the <a class="external" href="https://www.usc.gal/en">University of Santiago de Compostela</a>.
-                </h6>
+                    I graduated <a class="external" href="../resources/docs/Certificate_Video_Game_Development_Alejandro_Fraga_Cimadevila.pdf">with Honors</a> from the <a class="external" href="http://www.videojuegos-ucm.es/">Master in Video Game Development</a> by the <a class="external" href="https://www.ucm.es/english">Complutense University of Madrid</a> and graduated in <a class="external" href="https://www.usc.gal/en/studies/degrees/engineering-and-architecture/computer-engineering-degree">Computer Engineering</a> at the <a class="external" href="https://www.usc.gal/en">University of Santiago de Compostela</a>.
+                </h4>
             </div>
         </div>
         
         <!-- PROJECTS -->
-        <div class="section container">
-            <div class="row section">
-                <h5 class="appear col s12 m12 l12 xl12">
-                    PROJECTS
-                </h5>
-            </div>
+        <div class="container section">
         
             <!-- THE WAYLANDERS -->
             <div class="row section">
                 
-                <div class="appear video-with-text col s12 m12 l4 xl5">
+                <div class="appear autoplay-video col s12 m12 l5 xl5">
                     <a class="external" href="https://store.steampowered.com/app/957710/The_Waylanders">
                         <video class="hover-video width-100" loop muted poster="../resources/projects/the-waylanders.png">
                             <source src="../resources/projects/the-waylanders.mp4" type="video/mp4"/>
@@ -108,21 +98,20 @@
                     <div class="gradient-right width-10vw"></div>
                     <div class="gradient-left width-10vw"></div>
                 </div>
-                <div class="col s12 m12 l8 xl7">
-                    <h5 class="appear no-margin-top hide-on-med-and-down">
-                        The Waylanders
-                    </h5>
-                    <h5 class="appear hide-on-large-only">
-                        The Waylanders
-                    </h5>
-                    <h7 class="appear">JULY 2021 - FEBRUARY 2022</h7>
+                <div class="col s12 m12 l7 xl7">
+                    
+                    <h1 class="appear no-margin-on-large">
+                        THE WAYLANDERS
+                    </h1>
+                    
+                    <h5 class="appear no-margin">JULY 2021 - FEBRUARY 2022</h5>
 
-                    <h6 class="appear">
+                    <h4 class="appear">
                         The first meeting between the Celts and their gods, the Tuatha de Danaan, should have been a time of celebration and enlightenment, but when negotiations go catastrophically wrong, a battle against a god leaves you near death and untethered from time!
-                    </h6>
-                    <h6 class="appear">
+                    </h4>
+                    <h4 class="appear">
                         Return to a land overtaken by magickal corruptions and a kingdom splintered into multiple factions warring for the throne. The Celtic society, a complex tapestry of different religions, human cultures, and mortal and immortal races such as the Mourians, Werewolves, Goblins, and monsters threaten to tear at every seam. Will you support the immature, yet rightful, heir, or the pragmatic general in their bid for the throne? What alliances will you forge, what friendships will you foster, what romances will you pursue, and... what will you do when you are suddenly thrust into Medieval Spain?
-                    </h6>
+                    </h4>
                 </div>
                 
             </div>
@@ -130,7 +119,7 @@
             <!-- VOIDOUT -->
             <div class="row section">
 
-                <div class="appear video-with-text col s12 m12 hide-on-large-only">
+                <div class="appear autoplay-video col s12 m12 hide-on-large-only">
                     <a class="external" href="https://github.com/AlejandroFraga/voidout">
                         <video class="hover-video width-100" loop muted poster="../resources/projects/voidout.png">
                             <source src="../resources/projects/voidout.mp4" type="video/mp4"/>
@@ -141,34 +130,29 @@
                 </div>
                 
                 <!-- TEXT ON SMALL -->
-                <div class="col s12 m12 l8 xl7">
-                    <h5 class="appear no-margin-top hide-on-med-and-down">
-                        Voidout 
-                    </h5>
-                    <h5 class="appear hide-on-large-only">
-                        Voidout 
-                    </h5>
+                <div class="col s12 m12 l7 xl7">
                     
-                    <h7 class="appear">DECEMBER 2019 - JULY 2020</h7>
+                    <h1 class="appear no-margin-on-large">
+                        VOIDOUT 
+                    </h1>
+                    
+                    <h5 class="appear no-margin">DECEMBER 2019 - JULY 2020</h5>
 
-                    <h6 class="appear">
-                        Voidout is the Final Master Project we made for the Master in Video Game Development by the Complutense University of Madrid.
-                    </h6>
-                    <h6 class="appear">
-                        We are Loopgang Studios. We started as 16 students from the Master, and people from other Masters gave us a hand. They helped us with the music, the animations, the concept art... So, finally, over 30 persons were involved in the development of this project.
-                    </h6>
-                    <h6 class="appear">
-                        We built it from zero using Unreal Entinge 4, C++ and Blueprints.
-                    </h6>
-                    <h6 class="appear">
-                        The version control was made with Perforce.
-                    </h6>
-                    <h6 class="appear">
-                        The final product can be downloaded and played for free on our itch.io webpage.
-                    </h6>
+                    <h4 class="appear">
+                        Voidout is the <bold>Final Master Project</bold> we made for the <bold>Master in Video Game Development</bold> by the <bold>Complutense University of Madrid</bold>.
+                    </h4>
+                    <h4 class="appear">
+                        We are <bold>Loopgang Studios</bold>. We started as 16 students from the Master, and people from other Masters gave us a hand. They helped us with the music, the animations, the concept art... So, finally, <bold>over 30 persons</bold> were involved in the development of this project.
+                    </h4>
+                    <h4 class="appear">
+                        We built it from zero using <bold>Unreal Entinge 4</bold>, <bold>C++</bold> and <bold>Blueprints</bold>. The version control was made with <bold>Perforce</bold>.
+                    </h4>
+                    <h4 class="appear">
+                        The final product can be downloaded and played for free on <bold>our itch.io webpage</bold>.
+                    </h4>
                 </div>
 
-                <div class="appear video-with-text col l4 xl5 hide-on-med-and-down">
+                <div class="appear autoplay-video col l5 xl5 hide-on-med-and-down">
                     <a class="external" href="https://github.com/AlejandroFraga/voidout">
                         <video class="hover-video width-100" loop muted poster="../resources/projects/voidout.png">
                             <source src="../resources/projects/voidout.mp4" type="video/mp4"/>
@@ -182,7 +166,7 @@
             <!-- 2051 -->
             <div class="row section">
 
-                <div class="appear video-with-text col s12 m12 l4 xl5">
+                <div class="appear autoplay-video col s12 m12 l5 xl5">
                     <a class="external" href="https://github.com/AlejandroFraga/2051">
                         <video class="hover-video width-100" loop muted poster="../resources/projects/2051.png">
                             <source src="../resources/projects/2051.mp4" type="video/mp4"/>
@@ -191,37 +175,33 @@
                     <div class="gradient-right width-10vw"></div>
                     <div class="gradient-left width-10vw"></div>
                 </div>
-                <div class="col s12 m12 l8 xl7">
-                    <h5 class="appear no-margin-top hide-on-med-and-down">
+                <div class="col s12 m12 l7 xl7">
+                    
+                    <h1 class="appear no-margin-on-large">
                         2051
-                    </h5>
-                    <h5 class="appear hide-on-large-only">
-                        2051
-                    </h5>
-                    <h7 class="appear">29 - 31 JANUARY 2021</h7>
+                    </h1>
+                    
+                    <h5 class="appear no-margin">29 - 31 JANUARY 2021</h5>
 
-                    <h6 class="appear">
-                        It's the year 2051. you chose this year to open the time capsule that you prepared 30 years ago, which contains the experiences you had (we all had) in 2020, during the lockdown caused by COVID-19.
-                    </h6>
-                    <h6 class="appear">
-                        2051 is a narrative game composed by tiny mini-games.
-                    </h6>
-                    <h6 class="appear">
-                        All these mini-games simulate activities carried out by many of us during the lockdown: making video calls with friends or family, making bread, or doing yoga.
-                    </h6>
-                    <h6 class="appear">
-                        Game made for Global Game Jam 2021. theme was lost &amp; found: our take on the theme is the lost of the routines we used to have before the pandemic, which forced us to find new habits and routines.
-                    </h6>
-                    <h6 class="appear">
-                        Thanks for playing and stay safe :&#41;
-                    </h6>
+                    <h4 class="appear">
+                        It's the year 2051. you chose this year to open the time capsule that you prepared <bold>30 years ago</bold>, which contains the experiences you had (we all had) in 2020, during the lockdown caused by <bold>COVID-19</bold>.
+                    </h4>
+                    <h4 class="appear">
+                        2051 is a narrative game composed by tiny <bold>mini-games</bold>.
+                    </h4>
+                    <h4 class="appear">
+                        All these mini-games simulate <bold>activities</bold> carried out by many of us <bold>during the lockdown</bold>: making video calls with friends or family, making bread, or doing yoga.
+                    </h4>
+                    <h4 class="appear">
+                        Game made for <bold>Global Game Jam 2021</bold>. theme was lost &amp; found: our take on the theme is the lost of the routines we used to have before the pandemic, which forced us to find new habits and routines.
+                    </h4>
                 </div>
             </div>
         </div>
 
         <!-- FOOTER  -->
-        <footer class="simple-footer">
-            <div class="container">
+        <footer>
+            <div class="container center">
                     Copyleft <span class="copyleft">&copy;</span> 2022 Alejandro Fraga Cimadevila
             </div>
         </footer>

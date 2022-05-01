@@ -9,10 +9,6 @@ $(document).ready(function() {
         $(this).attr('rel', 'noopener noreferrer');
     });
     
-    // Start the modal
-    $('.modal').modal();
-    $('#update-modal').modal('open');
-    
     // Start the carousel
     $('.carousel').carousel();
     $('.carousel.carousel-slider').carousel({
@@ -34,9 +30,9 @@ $(document).ready(function() {
     $('.sidenav').sidenav().on('click tap', 'li a', () => { $('.sidenav').sidenav('close'); });
 
     /* Functions to trigger the play/load videos depending on the window size */
-    $('.video-with-text').hover(playVideosHover, loadVideosHover);
-    $('.video-with-text').on('playVideos', playVideos);
-    $('.video-with-text').on('loadVideos', loadVideos);
+    $('.autoplay-video').hover(playVideosHover, loadVideosHover);
+    $('.autoplay-video').on('playVideos', playVideos);
+    $('.autoplay-video').on('loadVideos', loadVideos);
     
     // Make the first checks before scrolling
     checkAppearAnimations();
@@ -70,7 +66,7 @@ function playVideoInCenter(before) {
             
         // get the scroll position of the document, all the videos, and create an array for its positions
         var scrollTop = $(document).scrollTop();
-        var elements = $('.video-with-text');
+        var elements = $('.autoplay-video');
         
         if(elements.length == 0)
             return before;
@@ -207,21 +203,4 @@ function closest(array, number) {
         }
     }
     return array[num].element;
-}
-
-/* FIXME */
-// Toggle dark mode
-function toggleDarkMode() {
-    if ($('body').hasClass('background-black')) {
-        $('body nav li').last().find('i').html('dark_mode');
-        $('#contact img').first().attr('src', 'resources/logos/GitHub_Black.png');
-        $('#contact img').last().attr('src', 'resources/logos/LinkedIn_Black.png');
-    } else {
-        $('body nav li').last().find('i').html('light_mode');
-        $('#contact img').first().attr('src', 'resources/logos/GitHub_White.png');
-        $('#contact img').last().attr('src', 'resources/logos/LinkedIn_White.png');
-    }
-    
-    $('body').toggleClass('background-white');
-    $('body').toggleClass('background-black');
 }
