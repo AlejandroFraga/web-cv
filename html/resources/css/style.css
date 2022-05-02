@@ -24,10 +24,11 @@ nav {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 10vw;
+    width: 5vw;
 }
 
-.autoplay-video {
+.autoplay-video,
+.block {
     position: relative;
     display: block;
 }
@@ -37,7 +38,7 @@ nav {
 /*---------- PROPORTIONS -----------*/
 
 .width-100 {
-    width: 100%;
+    width: 100% !important;
 }
 
 /* ON LARGE SCREENS */
@@ -97,7 +98,8 @@ img.logo-small {
     text-align: center;
 }
 
-.autoplay-video {
+.autoplay-video,
+.block {
     padding: 0 !important;
 }
 
@@ -141,7 +143,7 @@ nav ul li a {
 h1 {
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;
-    font-size: 5.33rem;
+    font-size: 5.52rem;
 }
 
 h2 {
@@ -176,8 +178,9 @@ h4 a, h4 bold {
     font-weight: 700;
 }
 
-.autoplay-video {
-    line-height: 0;
+.autoplay-video,
+.block {
+    line-height: 0 ;
 }
 
 footer {
@@ -258,12 +261,45 @@ nav {
 }
 
 .gradient-left {
-    background-image: linear-gradient(to right, black, transparent);
+    left: 0;
+    background-image:
+        linear-gradient(
+            90deg,
+            hsl(0, 0%, 0%) 0%,
+            hsla(0, 0%, 0%, 0.738) 19%,
+            hsla(0, 0%, 0%, 0.541) 34%,
+            hsla(0, 0%, 0%, 0.382) 47%,
+            hsla(0, 0%, 0%, 0.278) 56.5%,
+            hsla(0, 0%, 0%, 0.194) 65%,
+            hsla(0, 0%, 0%, 0.126) 73%,
+            hsla(0, 0%, 0%, 0.075) 80.2%,
+            hsla(0, 0%, 0%, 0.042) 86.1%,
+            hsla(0, 0%, 0%, 0.021) 91%,
+            hsla(0, 0%, 0%, 0.008) 95.2%,
+            hsla(0, 0%, 0%, 0.002) 98.2%,
+            hsla(0, 0%, 0%, 0) 100%
+        );
 }
 
 .gradient-right {
-    background-image: linear-gradient(to left, black, transparent);
     right: 0;
+    background-image:
+        linear-gradient(
+            270deg,
+            hsl(0, 0%, 0%) 0%,
+            hsla(0, 0%, 0%, 0.738) 19%,
+            hsla(0, 0%, 0%, 0.541) 34%,
+            hsla(0, 0%, 0%, 0.382) 47%,
+            hsla(0, 0%, 0%, 0.278) 56.5%,
+            hsla(0, 0%, 0%, 0.194) 65%,
+            hsla(0, 0%, 0%, 0.126) 73%,
+            hsla(0, 0%, 0%, 0.075) 80.2%,
+            hsla(0, 0%, 0%, 0.042) 86.1%,
+            hsla(0, 0%, 0%, 0.021) 91%,
+            hsla(0, 0%, 0%, 0.008) 95.2%,
+            hsla(0, 0%, 0%, 0.002) 98.2%,
+            hsla(0, 0%, 0%, 0) 100%
+        );
 }
 
 .appear {
