@@ -19,7 +19,7 @@ These are the tools that I used for the development of the website.
 | [Materialize](https://materializecss.com) | Materialize, a CSS Framework based on material design
 | [jQuery](https://jquery.com) | New Wave JavaScript |
 | [Material Icons](https://material.io/resources/icons/?style=baseline) | Material Design icons
-| [Oswald](https://fonts.google.com/specimen/Roboto+Condensed) | Roboto Condensed text font
+| [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) | Roboto Condensed text font
 | [Urbanist](https://fonts.google.com/specimen/Urbanist) | Urbanist text font
 
 ### Include Materialize in a project
@@ -27,30 +27,30 @@ These are the tools that I used for the development of the website.
 As an online resource
 
 ```html
-<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 ```
 
 As a local resource, first download [here](https://materializecss.com/getting-started.html) and then place it on a folder inside the website
 
 ```html
-<link href="folder/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-<script src="folder/materialize.min.js"></script>
+<link href="folder/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<script src="folder/materialize.js"></script>
 ```
 
 
-### Include JQuery in a project
+### Include jQuery in a project
 
 As an online resource
 
 ```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 ```
 
 As a local resource, first download [here](https://jquery.com/download/) and then place it on a folder inside the website
 
 ```html
-<script src="folder/materialize.min.js"></script>
+<script src="folder/materialize.js"></script>
 ```
 
 ### Include Material Design icons in a project
