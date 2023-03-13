@@ -6,10 +6,7 @@ This is the project for my personal website in which I talk about my professiona
 The website is divided in these sections:
 
   - [About](http://alejandrofraga.me) - Here I talk a little about my studies and experience
-  - [Projects](http://alejandrofraga.me/projects) - Here I show all my projects that are at least WIP
-  - IResume - Interactive resume* (WIP)
-
->*In this section you'll can play as me in an videogame. So instead of reading boring details, you'll be reading boring details inside a videogame. Who doesn't love that?
+  - [Projects](http://alejandrofraga.me/projects) - Here I show all my projects
 
 ## Used tools
 
