@@ -159,90 +159,91 @@ h1 {
 }
 
 h2 {
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 700;
-    font-size: 2.8rem;
+    font-weight: 300;
+    font-size: 2.4rem;
 }
 
 /* ON MEDIUM SCREENS */
 @media only screen and (min-width: 601px) {
     h2 {
-        font-size: 2.6rem !important;
+        font-size: 2.3rem !important;
     }
 }
 
 /* ON LARGE SCREENS */
 @media only screen and (min-width: 993px) {
     h2 {
-        font-size: 2.4rem !important;
+        font-size: 2.2rem !important;
+    }
+}
+
+/* ON EXTRA LARGE SCREENS */
+@media only screen and (min-width: 1201px) {
+    h2 {
+        font-size: 2rem !important;
     }
 }
 
 h3 {
-    font-weight: 300;
-    font-size: 2rem;
-}
-
-/* ON MEDIUM SCREENS */
-@media only screen and (min-width: 601px) {
-    h3 {
-        font-size: 1.8rem !important;
-    }
-}
-
-/* ON LARGE SCREENS */
-@media only screen and (min-width: 993px) {
-    h3 {
-        font-size: 1.6rem !important;
-    }
-}
-
-h4 {
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.25;
-    word-spacing: 0.1rem;
-}
-
-/* ON MEDIUM SCREENS */
-@media only screen and (min-width: 601px) {
-    h4 {
-        font-size: 1.4rem !important;
-    }
-}
-
-/* ON LARGE SCREENS */
-@media only screen and (min-width: 993px) {
-    h4 {
-        font-size: 1.3rem !important;
-    }
-}
-
-h5 {
     font-weight: 300;
     font-size: 1.2rem;
 }
 
 /* ON MEDIUM SCREENS */
 @media only screen and (min-width: 601px) {
-    h5 {
-        font-size: 1.15rem !important;
+    h3 {
+        font-size: 1.18rem !important;
     }
 }
 
 /* ON LARGE SCREENS */
 @media only screen and (min-width: 993px) {
-    h5 {
+    h3 {
+        font-size: 1.15rem !important;
+    }
+}
+
+/* ON EXTRA LARGE SCREENS */
+@media only screen and (min-width: 1201px) {
+    h3 {
         font-size: 1.1rem !important;
     }
 }
 
-h1, h2, h3 {
+p {
+    font-weight: 400;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    word-spacing: 0.1rem;
+}
+
+/* ON MEDIUM SCREENS */
+@media only screen and (min-width: 601px) {
+    p {
+        font-size: 1.42rem !important;
+    }
+}
+
+/* ON LARGE SCREENS */
+@media only screen and (min-width: 993px) {
+    p {
+        font-size: 1.37rem !important;
+    }
+}
+
+/* ON EXTRA LARGE SCREENS */
+@media only screen and (min-width: 1201px) {
+    p {
+        font-size: 1.3rem !important;
+    }
+}
+
+h1, h2 {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
-h4 a, h4 bold {
+p a, p bold {
     font-weight: 700;
 }
 
@@ -293,8 +294,8 @@ nav ul a:hover {
 
 /*----------- TEXT COLOR ------------*/
 
+h2,
 h3,
-h5,
 nav li,
 nav li a,
 .sidenav li a {
@@ -310,8 +311,8 @@ nav li a i,
     color: #f5f5f7;
 }
 
-h4 a,
-h4 bold {
+p a,
+p bold {
     color: #539987;
 }
 
