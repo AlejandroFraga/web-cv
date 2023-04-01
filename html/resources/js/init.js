@@ -9,18 +9,6 @@ $(document).ready(function() {
         $(this).attr('rel', 'noopener noreferrer');
     });
     
-    // Start the carousel
-    $('.carousel').carousel();
-    $('.carousel.carousel-slider').carousel({
-        fullWidth: true,
-        dist: 0
-    });
-    setTimeout(autoplay, 6000);
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 6000);
-    }
-    
     // Disable remote playback in all videos to hide the cast button
     $('.hover-video').each(function() {
         $(this).get(0).disableRemotePlayback = true;
@@ -220,7 +208,7 @@ function responsiveFontSize() {
         
         var h1Size = h1.clientWidth;
         
-        if (getTextWidth(h1.textContent.trim(), 'Bold 5.52rem Urbanist') >= h1Size) {
+        if (getTextWidth(h1.textContent.trim(), 'Bold 4rem Urbanist') >= h1Size) {
             h1.style.fontSize = desiredSize(h1) + 'rem';
             
         } else {
