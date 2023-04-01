@@ -102,8 +102,12 @@ img.logo-small {
     text-align: center;
 }
 
-.autoplay-video{
-    margin-top: 0.4rem !important;
+.autoplay-video {
+    margin-top: 0.5rem !important;
+}
+
+.block {
+    margin-top: 0.7rem !important;
 }
 
 .autoplay-video,
@@ -167,14 +171,14 @@ h3 {
 
 h4 {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.25;
     word-spacing: 0.1rem;
 }
 
 h5 {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 h1, h2, h3 {
