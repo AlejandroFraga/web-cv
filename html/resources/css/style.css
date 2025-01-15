@@ -186,26 +186,52 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 /* ON MEDIUM SCREENS */
 @media only screen and (min-width: 601px) {
     h3 {
-        font-size: 1.18rem !important;
+        font-size: 1.7rem !important;
     }
 }
 
 /* ON LARGE SCREENS */
 @media only screen and (min-width: 993px) {
     h3 {
-        font-size: 1.15rem !important;
+        font-size: 1.6rem !important;
     }
 }
 
 /* ON EXTRA LARGE SCREENS */
 @media only screen and (min-width: 1201px) {
     h3 {
+        font-size: 1.4rem !important;
+    }
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* ON MEDIUM SCREENS */
+@media only screen and (min-width: 601px) {
+    h4 {
+        font-size: 1.18rem !important;
+    }
+}
+
+/* ON LARGE SCREENS */
+@media only screen and (min-width: 993px) {
+    h4 {
+        font-size: 1.15rem !important;
+    }
+}
+
+/* ON EXTRA LARGE SCREENS */
+@media only screen and (min-width: 1201px) {
+    h4 {
         font-size: 1.1rem !important;
     }
 }
@@ -238,12 +264,18 @@ p {
     }
 }
 
-h1, h2 {
+h1,
+h2 {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
-p a, p bold {
+h3 a {
+    font-weight: 600;
+}
+
+p a,
+p b {
     font-weight: 700;
 }
 
@@ -267,6 +299,10 @@ footer {
 
 .semibold {
     font-weight: 600 !important;
+}
+
+.bold {
+    font-weight: 700 !important;
 }
 
 
@@ -296,6 +332,7 @@ nav ul a:hover {
 
 h2,
 h3,
+h4,
 nav li,
 nav li a,
 .sidenav li a {
@@ -311,8 +348,10 @@ nav li a i,
     color: #f5f5f7;
 }
 
+h2 a,
+h3 a,
 p a,
-p bold {
+p b {
     color: #539987;
 }
 

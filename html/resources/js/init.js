@@ -208,7 +208,7 @@ function responsiveFontSize() {
         
         var h1Size = h1.clientWidth;
         
-        if (getTextWidth(h1.textContent.trim(), 'Bold 4rem Urbanist') >= h1Size) {
+        if (getTextWidth(h1.textContent.trim(), 'bold 4rem Urbanist') >= h1Size) {
             h1.style.fontSize = desiredSize(h1) + 'rem';
             
         } else {

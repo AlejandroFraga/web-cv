@@ -1,5 +1,6 @@
-# IntelliJ
+# IntelliJ Idea folder
 .idea/
+*/.idea/
 
 # Private folder
-private/
+.private/
